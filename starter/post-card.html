@@ -3,7 +3,7 @@
 
 <dom-module id="post-card">
     <style>
-        :host{
+        :host {
             display: block;
             position: relative;
             background-color: white;
@@ -15,24 +15,25 @@
         .card-header {
             margin-bottom: 10px;
         }
-        
-        polyfill-next-selector {content: '.card-header h2';}
+        polyfill-next-selector { content: '.card-header h2'; }
         .card-header ::content h2 {
             margin: 0;
             font-size: 1.8rem;
-            font-width: 300;
+            font-weight: 300;
+            display: inline-flex;
         }
-
-        polyfill-next-selector {content: '.card-header img'}
+        polyfill-next-selector { content: '.card-header img'; }
         .card-header ::content img {
             width: 70px;
             border-radius: 50%;
             margin: 10px;
+            vertical-align: middle;
+            display: inline-flex;
         }
 
     </style>
     <template>
-        <div class="card-header layout vertical center">
+        <div class="card-header">
             <content select="img"></content>
             <content select="h2"></content>
         </div>
