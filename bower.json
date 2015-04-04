@@ -1,0 +1,19 @@
+{
+  "name": "polymer-learning",
+  "version": "0.0.0",
+  "authors": [
+    "yutong pang <wstcpyt@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.8.0-rc.2",
+    "web-component-tester": "Polymer/web-component-tester#~2.2.6",
+  }
+}
